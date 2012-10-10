@@ -4,14 +4,14 @@ using System.Configuration;
 using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
-using System.Windows;
+using windows = System.Windows;
 
 namespace Jobsearch.Application
 {
     /// <summary>
     /// Interaction logic for App.xaml
     /// </summary>
-    public partial class App : Application
+    public partial class App : windows.Application
     {
     }
 }
