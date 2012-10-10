@@ -1,0 +1,9 @@
+# Compiled Source #
+
+*.exe
+*.dll
+*.suo
+\_ReSharper.*
+\Debu*
+\Releas*
+\ob*
