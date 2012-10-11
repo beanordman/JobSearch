@@ -2,7 +2,34 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
-    <DataGrid x:Name="_grid" AutoGenerateColumns="true" ItemsSource="{Binding}">
-        
-    </DataGrid>
+    <Grid VerticalAlignment="Stretch">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+            <MenuItem Header="_File">
+                <MenuItem Header="New Role" Click="OnNewRoleClick"/>
+                <MenuItem Header="New Recruiter"/>
+                <MenuItem Header="New Application"/>
+            </MenuItem>
+            <MenuItem Header="_View">
+                <MenuItem Header="Applications"/>
+            </MenuItem>
+        </Menu>
+        <DataGrid Grid.Row="1" 
+                  x:Name="_grid" 
+                  AutoGenerateColumns="true" 
+                  CanUserAddRows="False"
+                  CanUserDeleteRows="False"
+                  ItemsSource="{Binding}" 
+                  HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                  >
+            <DataGrid.ItemContainerStyle>
+                <Style TargetType="DataGridRow">
+                    <EventSetter Event="MouseRightButtonUp" Handler="RowRightButtonUp"/>
+                </Style>
+            </DataGrid.ItemContainerStyle>
+        </DataGrid>
+    </Grid>
 </Window>
