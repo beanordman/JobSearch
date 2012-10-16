@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jobsearch.Application", "Jo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jobsearch.Model", "Jobsearch.Model\Jobsearch.Model.csproj", "{FB70F9C4-6DF4-415A-B859-AA7C819CBD87}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jobsearch.Model.Tests", "Jobsearch.Model.Tests\Jobsearch.Model.Tests.csproj", "{B077E0F3-E8D7-447F-BB42-DB8FFC068480}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{FB70F9C4-6DF4-415A-B859-AA7C819CBD87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB70F9C4-6DF4-415A-B859-AA7C819CBD87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB70F9C4-6DF4-415A-B859-AA7C819CBD87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B077E0F3-E8D7-447F-BB42-DB8FFC068480}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B077E0F3-E8D7-447F-BB42-DB8FFC068480}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B077E0F3-E8D7-447F-BB42-DB8FFC068480}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B077E0F3-E8D7-447F-BB42-DB8FFC068480}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

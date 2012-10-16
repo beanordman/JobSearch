@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Jobsearch.Model" namespace="Jobsearch.Model.Domain">
+
+  <class name="Application" table="Applications">
+    <id name="Id">
+      <generator class="counter"/>
+    </id>
+    <property name="JobId"/>
+    <property name="Status" length="16"/>
+    <property name ="Notes"/>
+  </class> 
+  
+  <class name="Appointment" table="Appointments">
+    <id name="Id">
+      <generator class="counter"/>
+    </id>
+    <property name="ClientId"/>
+    <property name="Details"/>
+    <property name="Date"/>
+  </class>
+  
+  <class name="Client" table="Clients">
+    <id name="Id">
+      <generator class="counter"/>
+    </id>
+    <property name="Name" length="32"/>
+    <property name="Contact" length="32"/>
+    <property name="Address" length="256"/>
+    <property name="Phone" length="20"/>
+    <property name="Email" length="64"/>
+    <property name="Details"/>
+    <property name="Link" length="256"/>
+  </class>
+  
+  <class name="Job" table="Jobs">
+    <id name="Id">
+      <generator class="counter"/>
+    </id>
+    <property name="Title" length="32"/>
+    <property name="Details" length="256"/>
+    <property name="Link" length="256"/>
+  </class>
+  
+  <class name="Recruiter" table="Recruiters">
+    <id name="Id">
+      <generator class="counter"/>
+    </id>
+    <property name="Name" length="32"/>
+    <property name="Phone" length="20"/>
+    <property name="Email" length="64"/>
+    <property name="Link" length="256"/>
+  </class>
+  
+</hibernate-mapping>
