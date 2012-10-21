@@ -5,11 +5,13 @@
     <property name="dialect">NHibernate.Dialect.MySQLDialect</property>
     <property name="connection.driver_class">NHibernate.Driver.MySqlDataDriver</property>
     <property name="use_proxy_validator">true</property>
-    <property name="connection.connection_string">User ID=root;Password=root321;Host=localhost;Port=3306;Database=jobsearch_test;</property>
+    <property name="connection.connection_string">User ID=root;Password=root321;Host=localhost;Port=3306;Database=job_search_test;</property>
 
     <property name="adonet.batch_size">16</property>
     <property name="generate_statistics">true</property>
     <property name="current_session_context_class">web</property>
-    <property name="proxyfactory.factory_class">NHibernate.ByteCode.Castle.ProxyFactoryFactory, NHibernate.ByteCode.Castle</property>    
+    <property name="proxyfactory.factory_class">NHibernate.Bytecode.DefaultProxyFactoryFactory, NHibernate</property>
+    <property name="generate_statistics">true</property>
+    <mapping assembly="Jobsearch.Model"/>
   </session-factory>
 </hibernate-configuration>

@@ -8,7 +8,7 @@ namespace Jobsearch.Model.Domain
 {
     public class Client
     {
-        public virtual string Id { get; set; }
+        public virtual int Id { get; set; }
         public virtual string Name { get; set; }
         public virtual string Contact { get; set; }
         public virtual string Address { get; set; }

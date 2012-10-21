@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jobsearch.Model", "Jobsearc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jobsearch.Model.Tests", "Jobsearch.Model.Tests\Jobsearch.Model.Tests.csproj", "{B077E0F3-E8D7-447F-BB42-DB8FFC068480}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "JobSearchSqlSvr", "JobSearchSqlSvr\JobSearchSqlSvr.sqlproj", "{C7D839F2-7466-4A49-9688-6E67652D2D39}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,12 @@ Global
 		{B077E0F3-E8D7-447F-BB42-DB8FFC068480}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B077E0F3-E8D7-447F-BB42-DB8FFC068480}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B077E0F3-E8D7-447F-BB42-DB8FFC068480}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7D839F2-7466-4A49-9688-6E67652D2D39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7D839F2-7466-4A49-9688-6E67652D2D39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7D839F2-7466-4A49-9688-6E67652D2D39}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C7D839F2-7466-4A49-9688-6E67652D2D39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7D839F2-7466-4A49-9688-6E67652D2D39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7D839F2-7466-4A49-9688-6E67652D2D39}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
